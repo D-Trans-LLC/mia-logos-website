@@ -109,7 +109,7 @@ function App() {
                 </a>
 
                 <a className="text-link" href="#platform">
-                  See Mia Logos in Action
+                  See the Difference
                   <span aria-hidden="true">→</span>
                 </a>
               </div>
