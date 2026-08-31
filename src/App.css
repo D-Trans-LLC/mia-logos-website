@@ -27,9 +27,12 @@
 /* Makes anchor navigation stop below the sticky header */
 #platform,
 #capabilities,
-#why,
-#contact {
+#why {
   scroll-margin-top: 100px;
+}
+
+#contact {
+  scroll-margin-top: 20px;
 }
 
 /* HEADER */
