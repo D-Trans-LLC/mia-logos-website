@@ -69,7 +69,7 @@ function App() {
             <a href="#contact">Contact</a>
           </nav>
 
-          <a className="button button-small" href="#demo">
+          <a className="button button-small" href="#contact">
             Request a Demo
           </a>
         </div>
@@ -104,7 +104,7 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <a className="button" href="#demo">
+                <a className="button" href="#contact">
                   Request a Demo
                 </a>
 
@@ -191,7 +191,9 @@ function App() {
         <section id="why" className="section section-dark">
           <div className="container why-grid">
             <div className="why-copy">
-              <p className="eyebrow eyebrow-light">More Than a Dashboard</p>
+              <p className="eyebrow eyebrow-light">
+                More Than a Dashboard
+              </p>
 
               <h2>
                 Dashboards display data.
@@ -218,11 +220,16 @@ function App() {
             <div className="compliance-panel">
               <div className="compliance-header">
                 <div>
-                  <span className="compliance-label">Live Compliance View</span>
+                  <span className="compliance-label">
+                    Live Compliance View
+                  </span>
+
                   <h3>Shipment operating status</h3>
                 </div>
 
-                <span className="compliance-badge">Compliant</span>
+                <span className="compliance-badge">
+                  Compliant
+                </span>
               </div>
 
               <div className="temperature-reading">
@@ -266,191 +273,220 @@ function App() {
                 <strong>Control Tower</strong>
               </div>
 
-              <span className="ecosystem-pill pill-1">Transportation</span>
-              <span className="ecosystem-pill pill-2">Temperature</span>
-              <span className="ecosystem-pill pill-3">Equipment</span>
-              <span className="ecosystem-pill pill-4">Security</span>
-              <span className="ecosystem-pill pill-5">Training</span>
-              <span className="ecosystem-pill pill-6">Quality</span>
-              <span className="ecosystem-pill pill-7">Documents</span>
-              <span className="ecosystem-pill pill-8">Suppliers</span>
+              <span className="ecosystem-pill pill-1">
+                Transportation
+              </span>
+
+              <span className="ecosystem-pill pill-2">
+                Temperature
+              </span>
+
+              <span className="ecosystem-pill pill-3">
+                Equipment
+              </span>
+
+              <span className="ecosystem-pill pill-4">
+                Security
+              </span>
+
+              <span className="ecosystem-pill pill-5">
+                Training
+              </span>
+
+              <span className="ecosystem-pill pill-6">
+                Quality
+              </span>
+
+              <span className="ecosystem-pill pill-7">
+                Documents
+              </span>
+
+              <span className="ecosystem-pill pill-8">
+                Suppliers
+              </span>
             </div>
           </div>
         </section>
 
         <section id="contact" className="section contact-section">
-  <div className="container contact-grid">
-    <div className="contact-copy">
-      <p className="eyebrow">Talk to Mia Logos</p>
+          <div className="container contact-grid">
+            <div className="contact-copy">
+              <p className="eyebrow">
+                Talk to Mia Logos
+              </p>
 
-      <h2>
-        See how connected quality and security can work in your
-        operation.
-      </h2>
+              <h2>
+                See how connected quality and security can work in your
+                operation.
+              </h2>
 
-      <p className="section-intro">
-        Contact our team to learn more about Mia Logos, discuss your
-        operational environment, or request a product demonstration.
-      </p>
+              <p className="section-intro">
+                Contact our team to learn more about Mia Logos, discuss your
+                operational environment, or request a product demonstration.
+              </p>
 
-      <div className="contact-email">
-        <span>Sales</span>
+              <div className="contact-email">
+                <span>Sales</span>
 
-        <a href="mailto:sales@mialogos.com">
-          sales@mialogos.com
-        </a>
-      </div>
-    </div>
+                <a href="mailto:sales@mialogos.com">
+                  sales@mialogos.com
+                </a>
+              </div>
+            </div>
 
-    <div id="demo" className="demo-card">
-      <p className="eyebrow">Request a Demo</p>
+            <div className="demo-card">
+              <p className="eyebrow">
+                Request a Demo
+              </p>
 
-      <h3>See Mia Logos in action.</h3>
+              <h3>
+                See Mia Logos in action.
+              </h3>
 
-      <form
-  className="demo-form"
-  name="demo-request"
-  method="POST"
-  action="/thank-you.html"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
->
-  <input
-    type="hidden"
-    name="form-name"
-    value="demo-request"
-  />
+              <form
+                className="demo-form"
+                name="demo-request"
+                method="POST"
+                action="/thank-you.html"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="demo-request"
+                />
 
-  <p className="hidden-field">
-    <label>
-      Do not fill this out:
-      <input name="bot-field" />
-    </label>
-  </p>
+                <p className="hidden-field">
+                  <label>
+                    Do not fill this out:
+                    <input name="bot-field" />
+                  </label>
+                </p>
 
-  <div className="form-row">
-    <div className="form-field">
-      <label htmlFor="firstName">
-        First Name
-      </label>
+                <div className="form-row">
+                  <div className="form-field">
+                    <label htmlFor="firstName">
+                      First Name
+                    </label>
 
-      <input
-        id="firstName"
-        name="firstName"
-        type="text"
-        autoComplete="given-name"
-        minLength={2}
-        maxLength={60}
-        required
-      />
-    </div>
+                    <input
+                      id="firstName"
+                      name="firstName"
+                      type="text"
+                      autoComplete="given-name"
+                      minLength={2}
+                      maxLength={60}
+                      required
+                    />
+                  </div>
 
-    <div className="form-field">
-      <label htmlFor="lastName">
-        Last Name
-      </label>
+                  <div className="form-field">
+                    <label htmlFor="lastName">
+                      Last Name
+                    </label>
 
-      <input
-        id="lastName"
-        name="lastName"
-        type="text"
-        autoComplete="family-name"
-        minLength={2}
-        maxLength={60}
-        required
-      />
-    </div>
-  </div>
+                    <input
+                      id="lastName"
+                      name="lastName"
+                      type="text"
+                      autoComplete="family-name"
+                      minLength={2}
+                      maxLength={60}
+                      required
+                    />
+                  </div>
+                </div>
 
-  <div className="form-field">
-    <label htmlFor="company">
-      Company
-    </label>
+                <div className="form-field">
+                  <label htmlFor="company">
+                    Company
+                  </label>
 
-    <input
-      id="company"
-      name="company"
-      type="text"
-      autoComplete="organization"
-      minLength={2}
-      maxLength={120}
-      required
-    />
-  </div>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    autoComplete="organization"
+                    minLength={2}
+                    maxLength={120}
+                    required
+                  />
+                </div>
 
-  <div className="form-field">
-    <label htmlFor="email">
-      Business Email
-    </label>
+                <div className="form-field">
+                  <label htmlFor="email">
+                    Business Email
+                  </label>
 
-    <input
-      id="email"
-      name="email"
-      type="email"
-      autoComplete="email"
-      placeholder="name@company.com"
-      maxLength={150}
-      required
-    />
-  </div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    placeholder="name@company.com"
+                    maxLength={150}
+                    required
+                  />
+                </div>
 
-  <div className="form-row">
-    <div className="form-field">
-      <label htmlFor="phone">
-        Phone
-      </label>
+                <div className="form-row">
+                  <div className="form-field">
+                    <label htmlFor="phone">
+                      Phone
+                    </label>
 
-      <input
-        id="phone"
-        name="phone"
-        type="tel"
-        autoComplete="tel"
-        inputMode="tel"
-        placeholder="+1 941 555 0123"
-        pattern="[0-9+\-().\s]{7,25}"
-        title="Enter a valid phone number, including country code if applicable."
-        maxLength={25}
-      />
-    </div>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autoComplete="tel"
+                      inputMode="tel"
+                      placeholder="+1 941 555 0123"
+                      pattern="[0-9+\-().\s]{7,25}"
+                      title="Enter a valid phone number, including country code if applicable."
+                      maxLength={25}
+                    />
+                  </div>
 
-    <div className="form-field">
-      <label htmlFor="jobTitle">
-        Job Title
-      </label>
+                  <div className="form-field">
+                    <label htmlFor="jobTitle">
+                      Job Title
+                    </label>
 
-      <input
-        id="jobTitle"
-        name="jobTitle"
-        type="text"
-        autoComplete="organization-title"
-        maxLength={100}
-      />
-    </div>
-  </div>
+                    <input
+                      id="jobTitle"
+                      name="jobTitle"
+                      type="text"
+                      autoComplete="organization-title"
+                      maxLength={100}
+                    />
+                  </div>
+                </div>
 
-  <div className="form-field">
-    <label htmlFor="message">
-      What would you like to learn about Mia Logos?
-    </label>
+                <div className="form-field">
+                  <label htmlFor="message">
+                    What would you like to learn about Mia Logos?
+                  </label>
 
-    <textarea
-      id="message"
-      name="message"
-      rows={5}
-      maxLength={2000}
-    ></textarea>
-  </div>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    maxLength={2000}
+                  ></textarea>
+                </div>
 
-  <button
-    className="button form-button"
-    type="submit"
-  >
-    Request a Demo
-  </button>
-</form>
-    </div>
-  </div>
-</section>
+                <button
+                  className="button form-button"
+                  type="submit"
+                >
+                  Request a Demo
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="site-footer">
@@ -464,8 +500,8 @@ function App() {
           </div>
 
           <div className="footer-links">
-            <a href="mailto:sales@mia-logos.com">
-              sales@mia-logos.com
+            <a href="mailto:sales@mialogos.com">
+              sales@mialogos.com
             </a>
 
             <span>© 2026 Mia Logos</span>
