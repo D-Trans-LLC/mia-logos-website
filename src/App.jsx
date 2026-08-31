@@ -308,113 +308,146 @@ function App() {
       <h3>See Mia Logos in action.</h3>
 
       <form
-        className="demo-form"
-        name="demo-request"
-        method="POST"
-        action="/thank-you.html"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input
-          type="hidden"
-          name="form-name"
-          value="demo-request"
-        />
+  className="demo-form"
+  name="demo-request"
+  method="POST"
+  action="/thank-you.html"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <input
+    type="hidden"
+    name="form-name"
+    value="demo-request"
+  />
 
-        <p className="hidden-field">
-          <label>
-            Do not fill this out:
-            <input name="bot-field" />
-          </label>
-        </p>
+  <p className="hidden-field">
+    <label>
+      Do not fill this out:
+      <input name="bot-field" />
+    </label>
+  </p>
 
-        <div className="form-row">
-          <div className="form-field">
-            <label htmlFor="firstName">First Name</label>
+  <div className="form-row">
+    <div className="form-field">
+      <label htmlFor="firstName">
+        First Name
+      </label>
 
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              required
-            />
-          </div>
+      <input
+        id="firstName"
+        name="firstName"
+        type="text"
+        autoComplete="given-name"
+        minLength={2}
+        maxLength={60}
+        required
+      />
+    </div>
 
-          <div className="form-field">
-            <label htmlFor="lastName">Last Name</label>
+    <div className="form-field">
+      <label htmlFor="lastName">
+        Last Name
+      </label>
 
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              required
-            />
-          </div>
-        </div>
+      <input
+        id="lastName"
+        name="lastName"
+        type="text"
+        autoComplete="family-name"
+        minLength={2}
+        maxLength={60}
+        required
+      />
+    </div>
+  </div>
 
-        <div className="form-field">
-          <label htmlFor="company">Company</label>
+  <div className="form-field">
+    <label htmlFor="company">
+      Company
+    </label>
 
-          <input
-            id="company"
-            name="company"
-            type="text"
-            required
-          />
-        </div>
+    <input
+      id="company"
+      name="company"
+      type="text"
+      autoComplete="organization"
+      minLength={2}
+      maxLength={120}
+      required
+    />
+  </div>
 
-        <div className="form-field">
-          <label htmlFor="email">Business Email</label>
+  <div className="form-field">
+    <label htmlFor="email">
+      Business Email
+    </label>
 
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-          />
-        </div>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      autoComplete="email"
+      placeholder="name@company.com"
+      maxLength={150}
+      required
+    />
+  </div>
 
-        <div className="form-row">
-          <div className="form-field">
-            <label htmlFor="phone">Phone</label>
+  <div className="form-row">
+    <div className="form-field">
+      <label htmlFor="phone">
+        Phone
+      </label>
 
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-            />
-          </div>
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        autoComplete="tel"
+        inputMode="tel"
+        placeholder="+1 941 555 0123"
+        pattern="[0-9+\-().\s]{7,25}"
+        title="Enter a valid phone number, including country code if applicable."
+        maxLength={25}
+      />
+    </div>
 
-          <div className="form-field">
-            <label htmlFor="jobTitle">Job Title</label>
+    <div className="form-field">
+      <label htmlFor="jobTitle">
+        Job Title
+      </label>
 
-            <input
-              id="jobTitle"
-              name="jobTitle"
-              type="text"
-            />
-          </div>
-        </div>
+      <input
+        id="jobTitle"
+        name="jobTitle"
+        type="text"
+        autoComplete="organization-title"
+        maxLength={100}
+      />
+    </div>
+  </div>
 
-        <div className="form-field">
-          <label htmlFor="message">
-            What would you like to learn about Mia Logos?
-          </label>
+  <div className="form-field">
+    <label htmlFor="message">
+      What would you like to learn about Mia Logos?
+    </label>
 
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-          ></textarea>
-        </div>
+    <textarea
+      id="message"
+      name="message"
+      rows={5}
+      maxLength={2000}
+    ></textarea>
+  </div>
 
-        <button
-          className="button form-button"
-          type="submit"
-        >
-          Request a Demo
-        </button>
-      </form>
+  <button
+    className="button form-button"
+    type="submit"
+  >
+    Request a Demo
+  </button>
+</form>
     </div>
   </div>
 </section>
